@@ -1,0 +1,8 @@
+.subnav-content a{
+    text-decoration: none;
+    color: black;
+}
+.subnav-content {
+    display: flex;
+    justify-content: space-evenly;
+}

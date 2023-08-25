@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    block head
+      meta(charset='UTF-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      link(rel='stylesheet' href='/css/style.css')
+      link(rel='stylesheet' href='/css/photogrid.css')
+
+      //- link(rel='shortcut icon' type='image/png' href='/img/favicon.png')
+      link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,300i,700')
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display&family=Raleway:wght@800&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans:wght@300;400;500;600&family=Playfair+Display&family=Raleway:wght@800&display=swap" rel="stylesheet">
+      title HotHEELS | #{title}
+  body
+    // HEADER
+    
+    include _header
+         
+    // CONTENT
+    include _photoGrid
+    block content
+      h1 This is a placeholder heading
+      
+    // FOOTER
+    include _footer
+    
+    script(src='/js/carousel.js')
+    script(src='/js/sideNavbar.js')
+    //- script(src='/js/stickyNavbar.js')
+
+    <script>history.scrollRestoration = "manual"</script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 

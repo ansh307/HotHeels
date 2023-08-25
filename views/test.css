@@ -1,0 +1,121 @@
+/* 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} */
+
+.cards {
+  /* font-family: 'Montserrat'; */
+  /* font-family: 'Cinzel', serif; */
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'Raleway', sans-serif; */
+}
+
+.cards a {
+  text-decoration: none;
+  color: orange;
+}
+
+.cards h2 {
+  color: #000;
+  /* margin: 2rem 0 0.5rem; */
+  font-size: 1.05rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.cards img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+/***************************           Cards            *******************************/
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 326px); /* see notes below */
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 2.01rem;
+  /* row-gap: 0; */
+}
+
+.card {
+  /*height: 200px;*/
+  /*background: red;*/
+  /* border: 2px solid #e7e7e7; */
+  /* border-radius: 4px; */
+  /* padding: 0.5rem; */
+  /* -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15); */
+  display: flex;
+  /* -webkit-box-orient: vertical; */
+  /* -webkit-box-direction: normal; */
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  color: #000000;
+} /* li item */
+
+.thumbnail img {
+  /* fill: #c7c4c4; */
+  height: 242.85px;
+  /* opacity: 0.25; */
+}
+
+.card-content {
+  font-size: 0.75rem;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.panel.card-panel .panel-header {
+  background-color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 400;
+  height: 25px !important;
+}
+
+.panel.card-panel .panel-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.category {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000;
+  opacity: 0.8;
+  /* margin-top: ; */
+}
+/* 
+footer {
+  border-top: 2px solid #e7e7e7;
+  margin: 0.5rem 0 0;
+  min-height: 30px;
+  font-size: 0.5rem;
+} */
+
+.container-cards {
+  padding: 25px 51px;
+}
+.category-by {
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.6;
+}
+.card-content p{
+	margin: 10px 0px;
+}

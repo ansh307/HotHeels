@@ -1,0 +1,108 @@
+extends base
+
+block content 
+
+    .container-article
+        hr
+        .article
+            h2= articles[0].mainHeading
+            p= articles[0].info
+            br
+            p= articles[0].info
+        hr
+    .sub-container
+        .slideshow-container
+            .mySlides.fade
+                //- .numbertext 1
+                img(src='/img/slide-3.jpg' style='width:100%')
+                //- .text Caption Text
+            .mySlides.fade
+                //- .numbertext 2
+                img(src='/img/test-img-10.jpg' style='width:100%')
+                //- .text Caption Two
+            .mySlides.fade
+                //- .numbertext 3
+                img(src='/img/test-img-12.jpg' style='width:100%')
+                //- .text Caption Three
+            a.prev(onclick='plusSlides(-1)') &#x276E;
+            a.next(onclick='plusSlides(1)') &#x276F;
+    br
+    div(style='text-align:center')
+        span.dot(onclick='currentSlide(1)')
+        span.dot(onclick='currentSlide(2)')
+        span.dot(onclick='currentSlide(3)')
+
+    .container-article
+        hr
+        .article
+            h2= articles[1].mainHeading
+            p= articles[1].info
+            br
+            p= articles[1].info
+        hr
+
+    .container-cards
+        section.cards
+            // card 1
+            article.card
+                picture.thumbnail
+                    img.category__01(src='/img/cards-img-1.jpg' alt='')
+                .card-content
+                    p.category.category__01 Magazine
+                    h2
+                        | Linda, Cindy, Christy, Naomi! The Iconic Supers Open Up About
+                        | Their Fabulous Then&mdash;and Now
+                    p.category-by
+                        | BY SALLY SINGER
+            // card 2
+            article.card
+                picture.thumbnail
+                    img.category__02(src='/img/cards-img-2.jpg' alt='')
+                .card-content
+                    p.category.category__02 Fashion
+                    h2 Which Supermodel Are You? Take This Quiz to Find Out
+                    p.category-by BY CHRISTIAN ALLAIRE
+            // card 3
+            article.card
+                picture.thumbnail
+                    img.category__03(src='/img/cards-img-3.jpg' alt='')
+                .card-content
+                    p.category.category__03 Runaway
+                    h2
+                        | Return of the Supers: See Behind the Scenes at the Making of
+                        | Vogue&rsquo;s September Issue
+                    p.category-by BY LAIA GARCIA-FURTADO
+                // .card-content
+                // card 4
+            article.card
+                picture.thumbnail
+                    img.category__04(src='/img/cards-img-4.jpg' alt='')
+                .card-content
+                    p.category.category__04 Shopping
+                    h2 &rsquo;90s Supermodel Glam Never Goes Out of Style
+                    p.category-by BY KIANA MURDEN
+    //- .container-md
+    //-     .container.text-center
+    //-         section.mt-5.pb-3
+    //-             .row.align-items-center
+    //-                 .col-4
+    //-                     .card(style='width: 20rem')
+    //-                         img.card-img-top(src='<%= product.imagesrc %>' alt='...')
+    //-                         .card-body
+    //-                         p.card-text
+    //-                             b  
+    //-                         p.card-text
+    //-                 .col
+    //-                     p 
+    //-             div
+    //-                 .container.text-center
+    //-                     .row.justify-content-center
+    //-                         .col-1
+    //-                             button.btn.btn-outline-primary
+    //-                                 a(href='') like &#xF7F6;
+    //-                         .col-2
+    //-                             button.btn.btn-outline-primary
+    //-                                 a(href='http://localhost:3000/comments') comment &#xF25C;
+    //-                         .col-1
+    //-                             button.btn.btn-outline-primary
+    //-                                 a(href='') share &#xF6B9;

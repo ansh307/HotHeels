@@ -1,0 +1,47 @@
+header.header
+  //- <!-- Sidebar -->
+  <div id="mySidenav" class="sidenav">
+    <a href="/" class="sideNavbar-title">HotHeel&</a>
+    <a href="javascript:void(0)" class="closebtn sideNavbar" onclick="closeNav()">&times;</a>
+    span#sideNavgap
+    <a href="#" class="sideNavbar-sub ">About</a>
+    <a href="#" class="sideNavbar-sub">Services</a>
+    <a href="#" class="sideNavbar-sub">Clients</a>
+    <a href="#" class="sideNavbar-sub">Contact</a>
+  </div>
+  .menu__logo( onclick="openNav()")
+    img(src='/img/menu-2.png' alt='logo')
+  .header__logo 
+    img(src='/img/icon-new.png' alt='logo')
+  nav.nav.nav--tours
+    a.nav__el-hero(href='/') HotHeel&
+  nav.nav.nav--user
+    if user
+      a.nav__el.nav__el--logout Log out
+      a.nav__el(href='/me')
+        img.nav__user-img(src=`/img/users/${user.photo}` alt=`Photo of ${user.name}`)
+        span= user.name.split(' ')[0]
+    else
+      a.nav__el(href='/login') Log in
+      a.nav__el.nav__el--cta(href='#') Sign up
+.container-nav-secondary
+  .SMN_effect-97
+    a.nav__el-secondary(href='?') Fashion
+    a.nav__el-secondary(href='?') Beauty
+    a.nav__el-secondary(href='?') Culture
+    a.nav__el-secondary(href='?') Shopping
+    a.nav__el-secondary(href='?') Video
+    a.nav__el-secondary(href='?') Style
+    a.nav__el-secondary(href='?') Trends  
+.secondary-paragragh-header
+  hr
+  .first-heading
+    p The latest fashion news, beauty coverage, celebrity style, fashion week updates, culture reviews, and videos on HotHeels.com.
+  hr
+.container-promo
+  hr
+  .promo
+    .header__logo
+      img(src='/img/gift-box.png' alt='logo')
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni qui, cupiditate 
+  hr
